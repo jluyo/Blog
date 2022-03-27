@@ -99,7 +99,7 @@ header{
     position: absolute;
     right: 20px;
     top: 16px;
-    padding: 10px;
+    padding: 20px;
     font-size: 20px;
     background: #fafafa;
     border-radius: 100%;
@@ -404,7 +404,7 @@ footer .redes-footer .fa-instagram:hover{
         color: #46a2fd;      
     }
     #icon-menu{
-        display: block;
+        display: flex;
     }
     .container-aside{
         flex-wrap: wrap;
