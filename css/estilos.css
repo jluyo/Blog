@@ -179,6 +179,7 @@ article{
     border-radius: 6px;
     position: relative;
     overflow: hidden;
+    text-align: justify;
 }
 
 article:before{
@@ -218,6 +219,7 @@ article img{
     margin-left: 40px;
     margin-bottom: 40px;
     padding-bottom: 20px;
+    text-align: justify;
 }
 
 .container-aside aside img{
@@ -247,80 +249,79 @@ article img{
 
 /*Footer pide de página*/
 
-.container-footer{
+footer{
     width: 100%;
-    padding: 40px 0px;
-    background: #f7f7f7;
-    margin-top: 40px;    
+    padding: 50px 0px;
+    background-image: url(../img/footer.png);
+    background-size: cover;
 }
 
-.container-footer footer{
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1200px;
     margin: auto;
+    margin-top: 100px;
 }
 
-.container-footer footer .logo-footer{
-    text-align: center;    
-}
-
-.container-footer footer .logo-footer img{
-    width: 100px;   
-}
-
-.container-footer footer .redes-footer{
+.box-footer{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box-footer .logo-footer img{
+    width: 150px;
+}
+
+.box-footer .terms{
+    max-width: 350px;
     margin-top: 20px;
-}
-
-.container-footer footer .redes-footer .icon-redes-footer{
-    font-size: 20px;
-    margin: 20px;
-    background: #efefef;  
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    color: #a2a2a2;
-}
-
-footer .redes-footer .fa-facebook-f:hover{
-    background: #41579a;
-    color: #fff;
-}
-
-footer .redes-footer .fa-google-plus-g:hover{
-    background: #de4c34;
-    color: #fff;
-}
-
-footer .redes-footer .fa-instagram:hover{
-    background: linear-gradient(to top right, #fcde30, #e9712a, #d23138, #ae4198, #7540a1,#5443a8) ;
-    color: #fff;
-}
-
-.container-footer footer hr{
-    margin-top: 20px;
-    border: none;
-    height: 2px;
-    background: #c7c7c1;
-}
-
-.container-footer h4{
-    text-align: center;
-    margin-top: 40px;
-    color: #a8a87a;
     font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box-footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;   
+}
+
+.box-footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box-footer a:hover{
+    opacity: 0.8;
+}
+
+.box-copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box-copyright h4{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box-copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
 }
 
 /*Responsive Design - adaptable a dispositivos móviles*/
 
 @media screen and (max-width: 1220px) {
     .header-content,
-    .container-content,
-    .container-footer footer{
+    .container-content{
         max-width: 1000px;
         padding: 0 20px;
     }
