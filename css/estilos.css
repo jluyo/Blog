@@ -40,6 +40,10 @@ header{
     align-items: center;
 }
 
+.logo img{
+    height: 80px;
+}
+
 .logo h1 b{
     color: #46a2fd;
 }
