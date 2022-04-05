@@ -155,7 +155,7 @@ header{
 
 .container-info-cover h1{
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 900;
     color: #fff;
     margin-bottom: 20px;
 }
@@ -314,7 +314,9 @@ footer{
     margin-top: 20px;
     color: #7a7a7a;
 }
-
+.box-copyright h4 b{
+    color: #567bca;
+}
 .box-copyright hr{
     border: none;
     height: 1px;
