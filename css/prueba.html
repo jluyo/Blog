@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    li.active a {
+  color: red;
+}
+</style>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+          <img src="../Blog/img/logo_lunahuana.png" alt="">
+      </div>
+
+      <div class="menu" id="show-menu">
+        <nav>
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+          </ul> 
+        </nav>
+      </div>
+    </div>
+
+    <div id="icon-menu">
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
+</body>
+
+<script>
+    const ul = document.querySelector('ul');
+
+ul.addEventListener('click', e => {
+e.preventDefault();
+let li = e.target.closest('li');
+if (li) {
+  ul.querySelectorAll('li').forEach(elm => elm.classList.remove('active'));
+  li.classList.add('active');
+}
+});
+
+
+</script>
+</html>
+
+
+
+  
