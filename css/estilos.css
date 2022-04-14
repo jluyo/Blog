@@ -87,10 +87,10 @@ header{
     transition: color 300ms;
 }
 .menu nav ul li a:hover{
-    color: #46a2fd;
+    color: #c77314;
 }
 .menu .text-menu-selected{
-    color: #46a2fd;
+    color: #c77314;
 }
 
 .menu nav ul li a i{
@@ -267,7 +267,7 @@ footer{
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .box-footer{
@@ -374,7 +374,7 @@ footer{
         position: fixed;
         top: 80px;
         left: 0;
-        background: #fff;
+        background: rgb(196, 161, 144);
         overflow: hidden;
         transform: translateX(-350px);
         box-sizing: 10px 0 20px -25px black;
@@ -402,17 +402,18 @@ footer{
 
     .menu nav ul li a{
         margin-top: 40px;
-        color: #858585;        
+        color: #fff;        
     }
 
     .menu nav ul li a i{
         width: 20px;
         display: inline-block; 
         margin-right: 10px;
-        color: #46a2fd;      
+        color: #fff;      
     }
     #icon-menu{
         display: flex;
+        background-color: rgb(196, 161, 144);;
     }
     .container-aside{
         flex-wrap: wrap;
