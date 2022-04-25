@@ -398,6 +398,8 @@ footer{
         justify-content: center;
         align-items: center;
     }
+
+
 }
 
 @media screen and (max-width: 1020px) {
@@ -408,9 +410,6 @@ footer{
         flex-direction: column;
     }
 
-    .container-galeria .card{
-        margin: 20px 0px 20px 20px;
-    }
     article{
         box-shadow: 0 0 0 0;
     }
@@ -489,5 +488,9 @@ footer{
     .container-aside{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .container-galeria .card{
+        margin: 20px 0px;
     }
 }
