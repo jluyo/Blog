@@ -424,6 +424,10 @@ footer{
         margin: 10px;        
     }
 
+    .box-footer{
+        padding: 40px 10px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
