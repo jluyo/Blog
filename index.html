@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
 
     <link rel="stylesheet" href="../Blog/css/estilos.css">
+    <link rel="stylesheet" href="https://vjs.zencdn.net/7.2/video-js.min.css">
+    <script src="https://vjs.zencdn.net/7.2/video.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/cbe540de05.js" crossorigin="anonymous"></script>
@@ -134,7 +136,14 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolorum quam harum enim ducimus vel est inventore nisi accusamus, odit, tempore impedit nulla cum, obcaecati dolorem. Tempore, facere. Minus, accusamus?</p>
         <a href="#">Leer más</a>
       </div>
-    </div>    
+    </div>
+    <main>  
+    <div class="contenedor">
+      <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+        <source src="../Blog/video/perritos.mp4" type="video/mp4">
+      </video>
+    </div>  
+  </main>
   </div>
 
   <footer> 
@@ -179,5 +188,11 @@
   </footer>
 
   <script src="../Blog/js/script.js"></script>
+
+  <script>
+    var reproductor = videojs('fm-video',{
+      fluid: true
+    });
+  </script>
 </body>
 </html>
